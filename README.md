@@ -6,7 +6,9 @@ This project introduces you to the fundamentals of web APIs with Node.js framewo
 
 ## Build your Project
 
-### Select a Node.js framework - Before building the project, one has to choose their preferred Node.js framework from the following:
+## Select a Node.js framework 
+
+Before building the project, one has to choose their preferred Node.js framework from the following:
 
 - Hapi.js
 - Express.js
@@ -18,29 +20,22 @@ I have choosen Express.js for the implementation.
 
 The framework choosen will interface with the private blockchain(https://github.com/gowrieswaran/private-blockchain.git). To run, clone/download the private blockchain repo.
 
-        ### Configure API service to the appropriate port
+### Configure API service to the appropriate port
 
-            Added the server.js to configure the API service to the appropriate port.
+Added the server.js to configure the API service to the appropriate port.
 
-        ### Configure two endpoints - GET & POST
+### Configure two endpoints - GET & POST
 
-            Added the BlockController.js to create two endpoints, which allow the application to accept user requests.
+Added the BlockController.js to create two endpoints, which allow the application to accept user requests.
 
-        ### Install Dependencies
+### Install Dependencies
 
-            `npm install express`      - Installs the Fast, unopinionated, minimalist web framework for node.
+`npm install express`      - Installs the Fast, unopinionated, minimalist web framework for node.
 
-            `npm install body-parser`  - Node.js body parsing middleware, which parses incoming request bodies in a middleware before                                        your handlers, available under the req.body property.
+`npm install body-parser`  - Node.js body parsing middleware, which parses incoming request bodies in a middleware before                                            your handlers, available under the req.body property.
 
-## To run the project type `npm start` in the command prompt and on successful launch, it displays the message below:
+### To run the project type `npm start` in the command prompt and on successful launch, it displays the message below:
 
-```
-Server Listening for port: 8000
-```
-
-Access endpoints:http://localhost:8000 GET - /block/height (or) POST - /block
-
-```
 
 
 ## Testing the endpoints
@@ -70,7 +65,6 @@ Response
     "time": "1544170986",
     "previousBlockHash": ""
 }
-```
 
 URL: http://localhost:8000/block/100
 
