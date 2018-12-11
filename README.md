@@ -36,7 +36,7 @@ Added the BlockController.js to create two endpoints, which allow the applicatio
 
 ### To run the project type `npm start` in the command prompt and on successful launch, it displays the message below:
 
-
+![Listening for port](https://github.com/gowrieswaran/RESTful-Web-API-with-Node.js-Framework/blob/master/images/start-img.png)
 
 ## Testing the endpoints
 
@@ -58,19 +58,15 @@ URL: http://localhost:8000/block/0
 
 Response
 
-{
-    "hash": "d22da62c9444d97d5f42b6c2f99106127093f4354fc8ea3e53be1ed93d406b96",
-    "height": 0,
-    "body": "First Block in the chain - Genesis Block",
-    "time": "1544170986",
-    "previousBlockHash": ""
-}
+![GET block 0](https://github.com/gowrieswaran/RESTful-Web-API-with-Node.js-Framework/blob/master/images/get-block-0.png)
 
 URL: http://localhost:8000/block/100
 
 Response
 
 Block does not exist!
+
+![GET block 100](https://github.com/gowrieswaran/RESTful-Web-API-with-Node.js-Framework/blob/master/images/get-block-100.png)
 
 ## POST Block Endpoint - Tested using Postman
 
@@ -82,16 +78,18 @@ KEY:body VALUE:Data Added from Postman
 
 Response
 
-{
-"hash": "bad99898ed3912fe2cee5949b963778ead7eb9957d8aaa423e312b92d3076976",
-"height": 9,
-"body": "Data Added from Postman",
-"time": "1544547544",
-"previousBlockHash": "131916398e09ad29c6187754d4bd2fb8539255837f855fef01dc3df18a92d141"
-}
+![POST block](https://github.com/gowrieswaran/RESTful-Web-API-with-Node.js-Framework/blob/master/images/post-with-data.png)
 
 URL: http://localhost:8000/block
 
 Response
 
 Pass data to the block using data payload option!
+
+![POST without data](https://github.com/gowrieswaran/RESTful-Web-API-with-Node.js-Framework/blob/master/images/post-without-data.png)
+
+## GET block which is added using POST
+
+URL: http://localhost:8000/block/11
+
+![GET data after POST](https://github.com/gowrieswaran/RESTful-Web-API-with-Node.js-Framework/blob/master/images/get-block-after-post.png)
